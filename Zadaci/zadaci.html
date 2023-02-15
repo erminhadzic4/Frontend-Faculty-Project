@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="../Slike/etf_logo.svg" type="image/x-icon" />
+    <title>Zadaci</title>
+  </head>
+  <body>
+    <div class="glavniDiv">
+  <div class="forma" id="prva">
+    <form>
+        <select name="odabir-vjezbi" id="vjezbe">
+            <option value="Prazno">Odabir vjezbe</option>
+            <option value="Vjezba1">Vjezba1</option>
+            <option value="Vjezba2">Vjezba2</option>
+            <option value="Vjezba3">Vjezba3</option>
+            <option value="Vjezba4">Vjezba4</option>
+          </select>
+          <select name="odabir-zadatka" id="zadaci">
+            <option value="Prazno">Odabir zadatka</option>
+            <option value="Zadatak1">Zadatak1</option>
+            <option value="Zadatak2">Zadatak2</option>
+            <option value="Zadatak3">Zadatak3</option>
+            <option value="Zadatak4">Zadatak4</option>
+          </select>
+          <select name="odabir-verzije" id="verzija">
+            <option value="Prazno">Odabir verzije</option>
+            <option value="Verzija1">Verzija1</option>
+            <option value="Verzija2">Verzija2</option>
+            <option value="Verzija3">Verzija3</option>  
+            <option value="Verzija4">Verzija4</option>
+          </select>
+        <textarea name="komentar" id="komentar" cols="30" rows="8" placeholder="Vas komentar"></textarea> <!-- cols i rows mijenja sirinu/duzinu boxas -->
+      <button>Posalji</button>
+    </form>
+  </div>
+  <div class="forma">
+    <form>
+        <input type="text" placeholder="Unesite greske u box ispod" disabled="disabled"> <!-- Ovaj input field koristim kao zamjena za label, ljepse mi izgleda -->
+        <textarea name="errors-log" id="errors-log" cols="30" rows="8" placeholder="Vas komentar"></textarea>
+        <input type="text" placeholder="Ukoliko nema gresaka strihirajte" id="bez-gresaka" disabled="disabled"> <!-- Ovaj input field koristim kao zamjena za label, ljepse mi izgleda -->
+        <input type="checkbox" name="bez-gresaka">
+      <button>Dodaj rezultate testa</button>
+    </form>
+  </div>
+</div>
+  </body>
+</html>

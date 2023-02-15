@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+/*--------------------Prvobitne postavke---------------------*/
+
+body {
+  background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%); /* Radijalna pozadina */
+}
+
+html {
+  background-repeat: no-repeat;
+}
+
+.glavniDiv {
+  width: 50%;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.forma {
+  background-color: #fff1;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  margin-top: 10%;
+  padding: 45px;
+  text-align: center;
+}
+
+/*--------------------Prvobitne postavke---------------------*/
+/*----------------------Forme i inputi-----------------------*/
+
+input {
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+button {
+  font-family: "Roboto", sans-serif;
+  background: #616461;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/*----------------------Forme i inputi-----------------------*/
+/*--------------------------Hoveri---------------------------*/
+
+button:hover{
+  background-color: rgba(29, 27, 27, 0.733);
+}
+
+.forma:hover{
+  background-color: rgba(255, 255, 255, 0.027);
+}
+
+/*--------------------------Hoveri---------------------------*/
+/*-----------------------Media query-------------------------*/
+
+@media (max-width: 600px) { /* Dimenzije zadane u zadatku */
+  .glavniDiv {
+    width: 100%;
+  }
+}
+
+/*-----------------------Media query-------------------------*/

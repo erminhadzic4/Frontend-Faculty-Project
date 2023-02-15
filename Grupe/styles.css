@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Trirong);
+
+/*--------------------Prvobitne postavke---------------------*/
+
+html {
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0px;
+  background: radial-gradient(circle at 100%,#333,#333 50%,#eee 75%,#333 75%); /*Radijalna pozadina*/
+}
+
+#hero .title {
+  margin-top: 0; /* Da se izgubi bijeli prostor */
+}
+
+div {
+  border: inset 1px;
+}
+
+/*--------------------Prvobitne postavke---------------------*/
+/*---------------------------Meni----------------------------*/
+
+#meni {
+  flex: 1;
+  height: 100px;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#containerStranice {
+  display: flex;
+  height: 100%;
+  border-bottom: 0;
+  border: none;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 35px;
+  font-family: "Trirong", sans-serif;
+}
+
+/*---------------------------Meni----------------------------*/
+/*--------------------Lijevi dio stranice--------------------*/
+
+.itemGrida {
+  display: flex;
+  background-color: rgba(224, 220, 220, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px;
+  margin: 0;
+  font-size: 30px;
+  align-self: center;
+  flex: 1;
+}
+
+#itemGrida table,
+td,
+th {
+  border: 3px groove;
+  border-collapse: collapse;
+  font-size: 15pt;
+}
+
+.itemGrida td {
+  flex: 1;
+  font-size: 20px;
+}
+
+#studenti table {
+  flex: 1;
+  border-style: hidden;
+}
+
+#grupe {
+  flex: 1;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#divTable {
+  width: 100%;
+  display: flex;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+/*--------------------Lijevi dio stranice--------------------*/
+/*--------------------Desni dio stranice---------------------*/
+
+table,
+td {
+  background-color: #ffffff10;        /* Ove tri linije prave meni prelijep zamagljeni efekat */
+  backdrop-filter: blur(12px);          /* Ove tri linije prave meni prelijep zamagljeni efekat */
+  -webkit-backdrop-filter: blur(12px);  /* Ove tri linije prave meni prelijep zamagljeni efekat */
+  border: 3px groove;
+  border-collapse: collapse;
+  flex: 1;
+  font-size: 20pt;
+}
+
+th {
+  text-align: left;
+}
+
+a {
+  color: rgb(153, 9, 9);
+  font-size: 20px;
+}
+
+#studenti {
+  width: 100%;
+  flex: 2;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  background-color: #ffffff10;        /* Ove tri linije prave meni prelijep zamagljeni efekat */
+  backdrop-filter: blur(12px);          /* Ove tri linije prave meni prelijep zamagljeni efekat */
+  -webkit-backdrop-filter: blur(12px);  /* Ove tri linije prave meni prelijep zamagljeni efekat */
+  padding: 8px;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+/*--------------------Desni dio stranice---------------------*/
+/*--------------------------Hoveri---------------------------*/
+
+tr:hover {
+  background-color: rgb(146, 146, 146);
+}
+
+td:hover {
+  background-color: rgb(146, 146, 146);
+}
+
+/*--------------------------Hoveri---------------------------*/
+/*------------------------Media query------------------------*/
+
+@media (max-width: 768px) { /* Dimenzije tableta, iPad, Samsung A7+, Huawei MediaPad */
+  #studenti {
+    width: 100%;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    padding: 10px 0px;
+    padding-bottom: 10px;
+  }
+  #grupe {
+    width: 100%;
+  }
+  #containerStranice {
+    display: block;
+  }
+  #meni {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) { /* Dimenzije zadane u postavci projekta */
+  #studenti {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 280px) { /* Dimenzije rasklopljivih mobitela kao npr Galaxy Fold */
+  #studenti {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*------------------------Media query------------------------*/

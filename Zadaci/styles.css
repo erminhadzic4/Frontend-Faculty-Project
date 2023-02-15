@@ -1,0 +1,126 @@
+/*--------------------Prvobitne postavke---------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+*{
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at 100%,#333,#333 50%,#eee 75%,#333 75%); /*Radijalna pozadina*/
+}
+
+button {
+  background: #616461;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+input {
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+select {
+  background: #f2f2f2;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+}
+
+/*--------------------Prvobitne postavke---------------------*/
+/*--------------------Postavke za forme----------------------*/
+
+textarea {
+  text-align: center;
+}
+
+.glavniDiv {
+  justify-content: center;
+  width: 50%;
+  padding: 8% 0 0;
+  margin: auto;
+  display: flex;
+}
+.forma {
+  background-color: #fff1;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 45px;
+  text-align: center;
+}
+
+#prva{
+  margin-right: 100px;
+}
+
+#bez-gresaka {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 10%;
+}
+
+/*--------------------Postavke za forme----------------------*/
+/*--------------------------Hoveri---------------------------*/
+
+button:hover{
+  background-color: rgba(29, 27, 27, 0.733);
+}
+
+.forma:hover{
+  background-color: rgba(255, 255, 255, 0.027);
+}
+
+/*--------------------------Hoveri---------------------------*/
+/*------------------------Media query------------------------*/
+
+@media (max-width: 768px) { /* Dimenzije tableta, iPad, Samsung A7+, Huawei MediaPad */
+  .glavniDiv {
+    justify-content: center;
+    display: grid;
+    width: 100%;
+    margin: auto;
+  }
+  .forma {
+    margin: 0px;
+  }
+  textarea {
+    width: 98%;
+  }
+  #prva{
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 600px) { /* Dimenzije zadane u postavci projekta */
+  .glavniDiv {
+    width: 80%;
+  }
+}
+
+@media (max-width: 280px) { /* Dimenzije rasklopljivih mobitela kao npr Galaxy Fold */
+  .forma {
+    padding: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+}
+
+/*------------------------Media query------------------------*/
